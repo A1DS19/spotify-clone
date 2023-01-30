@@ -21,6 +21,7 @@ const Sidebar = () => {
           {link.name}
         </NavLink>
       ))}
+      <span className='text-white text-sm'>Jose Padilla {new Date().getFullYear()}</span>
     </div>
   );
 
