@@ -11,8 +11,8 @@ const Search = () => {
   const songs = data?.tracks?.hits?.map((song) => song.track);
   const { activeSong, isPlaying } = useSelector((state) => state.player);
 
-  if (isLoading) return <Loader title='Cargando cancion...' />;
-  if (error) return <Error title='Error cargando cancion' error={error} />;
+  if (isLoading) return <Loader title='Cargando canciones...' />;
+  if (error) return <Error title='Error cargando canciones' error={error} />;
 
   return (
     <div className='flex flex-col'>
